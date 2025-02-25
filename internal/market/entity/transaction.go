@@ -29,6 +29,6 @@ func NewTransaction(sellingOrder *Order, buyingOrder *Order, shares int, price f
 }
 
 func (t *Transaction) Process() {
-	processsor := NewOrderProcessor(t)
-	processsor.Process()
+	processor := NewOrderProcessor(t)
+	processor.Process()
 }
